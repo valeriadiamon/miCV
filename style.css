@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Noto Serif', serif;
+}
+body{
+    background-color: rgb(255, 228, 233);
+}
+#container{
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px rgba(196, 191, 191, 0.8);
+    margin: 0 10%;
+    padding-bottom: 50px ;
+}
+.profile-picture{
+    width: 15%;
+    border-radius: 100%;
+    margin-left: 5%;
+}
+.name{
+    /*height: 75px;*/
+    width:50%;
+    margin-left: 5%;
+}
+nav ul{
+    display: flex;
+    width: 60%;
+    margin: 10px auto;
+    justify-content: space-around;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(197, 136, 147);
+    font-size: 20px;
+}
+hr{
+    background-color: black;
+    width: 90%;
+    height: 2px;
+    margin: 10px auto 0 auto;
+}
+article{
+    margin: 0 50px;
+}
+article li{
+    margin-left: 30px;
+}
+h2{
+    font-size: 30px;
+    margin: 30px 0 10px 0;
+}
+#img-libros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#img-libros img{
+    width: 250px;
+    height: 350px;
+    margin-bottom: 25px;
+}
+#img-libros img:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:1024px){
+    nav ul{
+        width:90%;
+    }
+}
+@media screen and (max-width:768px){
+    *{
+        font-size: 12px;
+    }
+    #container{
+        margin: 0 5%;
+    }
+    h2{
+        font-size: 14px;
+    }
+    nav ul li a{
+        font-size: 10px;
+        width: 100%;
+    }
+    nav ul li a:hover{
+        font-size: 10px;
+        color:rgb(197, 136, 147);
+    }
+}
+@media screen and (max-width:480px) {
+    #img-libros img{
+       width:100%; 
+    }
+}
